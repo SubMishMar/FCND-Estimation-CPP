@@ -242,5 +242,15 @@ For this project, you will need to submit:
 Thanks to Fotokite for the initial development of the project code and simulator.
 
 ## Write-Up ##
-- Estimating the Std Deviation
+- Estimating the Std Deviation:
   - Used MATLAB's inbuilt function ``std()`` to determine the standard deviation of the GPS and IMU measurements.
+- Improved Gyro Attitude Integration Scheme:
+  - Here are the lines of code: https://github.com/SubMishMar/FCND-Estimation-CPP/blob/e74d6641af1e0cd2d4f28e269a2ea005c41f0532/src/QuadEstimatorEKF.cpp#L99-L105
+- Implementation of Prediction Step:
+  - The implementation can be found here: https://github.com/SubMishMar/FCND-Estimation-CPP/blob/e74d6641af1e0cd2d4f28e269a2ea005c41f0532/src/QuadEstimatorEKF.cpp#L170-L176-
+- Implementation of Magnetometer Sensor Model:
+  - The sensor model for magnetomenter is implemented here: https://github.com/SubMishMar/FCND-Estimation-CPP/blob/e74d6641af1e0cd2d4f28e269a2ea005c41f0532/src/QuadEstimatorEKF.cpp#L328-L335
+- Implementation of GPS Sensor Model:
+  - Here is the implementation of the GPS Measurment Model:https://github.com/SubMishMar/FCND-Estimation-CPP/blob/e74d6641af1e0cd2d4f28e269a2ea005c41f0532/src/QuadEstimatorEKF.cpp#L300-L308
+  
+After implementing all the above steps and replacing the QuadrotorControl.cpp and QuadrotorControlParams.txt with the one I had submitted in my last project submission and a little bit of tuning, I achieve satisfactory performance as far as the performance criteria is concerned. 
