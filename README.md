@@ -240,3 +240,7 @@ For this project, you will need to submit:
 ## Authors ##
 
 Thanks to Fotokite for the initial development of the project code and simulator.
+
+## Write-Up ##
+- Estimating the Std Deviation
+  - Used MATLAB's inbuilt function ``std()`` to determine the standard deviation of the GPS and IMU measurements.
